@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family= Open + Sans:ital,wght@0,400;1,300 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2ebe3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 600px;
+    height: 420px;
+    border-radius: 12px;
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.200);
+}
+
+.leftcont{
+    width: 300px;
+    height: 420px;
+    border-radius: 12px 0 0 12px;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    
+}
+
+.rigthcont{
+    width: 300px;
+    height: 420px;
+    padding: 25px;
+    border-radius: 0 12px 12px 0;
+}
+
+h5{
+    font-weight: lighter;
+}
+
+h2{
+    font-weight: bolder;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+p{
+    line-height: 24px;
+}
+
+.price{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #38581c;
+    margin: 20px;
+}
+
+.out{
+    margin-left: 30px;
+    font-size: 15px;
+    color: black;
+    text-decoration: line-through;
+}
+
+.btn a{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #3C826A;
+    transition: .2s all;
+}
+
+.btn a:hover{
+    background-color: #38581c;
+    transition: .2s all;
+}
+
+@media screen and (min-width:375px) and (max-width:600px) {
+
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2ebe3;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .container{
+        width: 300px;
+        height: 600px;
+        display: block;
+    }
+
+
+    .leftcont{
+        height: 200px;
+        border-radius: 12px 12px 0 0;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: cover;
+    }
+
+    h2{
+        font-weight: bolder;
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .btn a{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #3C826A;
+        transition: .2s all;
+    }
+}
